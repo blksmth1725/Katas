@@ -2,9 +2,9 @@ function isPowerOfTwo(n) {
   //.. should return true or false ..
   const verification = n % 2;
   if (n === 1) {
-    return "true";
+    return true;
   } else if (n === 0) {
-    return "false";
+    return false;
   } else {
     return verification === 0 ? true : false;
   }
