@@ -1,17 +1,9 @@
 function isPowerOfTwo(n) {
-  //.. should return true or false ..
-  const verification = n % 2;
-  if (n === 1) {
-    return true;
-  } else if (n === 0) {
-    return false;
-  } else {
-    return verification === 0 ? true : false;
-  }
+  return Number.isInteger(Math.log2(n));
 }
 
-console.log(isPowerOfTwo(10));
+console.log(isPowerOfTwo(1024));
 console.log(isPowerOfTwo(487));
-console.log(isPowerOfTwo(200));
-console.log(isPowerOfTwo(333));
+console.log(isPowerOfTwo(144));
+console.log(isPowerOfTwo(4096));
 console.log(isPowerOfTwo(350));
