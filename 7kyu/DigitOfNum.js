@@ -1,9 +1,12 @@
 //Complete the function that takes two numbers as input, num and nth and return the nth digit of num (counting from right to left).
 
 const findDigit = (num, nth) => {
-  const x = Math.abs(num);
-  const arrNum = x.toString().split("");
-  return nth <= 0 ? -1 : arrNum[arrNum.length - nth];
+  const arr = Math.abs(num).toString().split("");
+  return nth <= 0
+    ? -1
+    : arr[arr.length - nth] === undefined
+    ? 0
+    : arr[arr.length - nth];
 };
 
 console.log(findDigit(-2825, 3));
