@@ -2,11 +2,14 @@
 
 const findDigit = (num, nth) => {
   const arr = Math.abs(num).toString().split("");
-  return nth <= 0
-    ? -1
-    : arr[arr.length - nth] === undefined
-    ? 0
-    : arr[arr.length - nth];
+  let result =
+    nth <= 0
+      ? -1
+      : arr[arr.length - nth] === undefined
+      ? 0
+      : arr[arr.length - nth];
+
+  return Number(result);
 };
 
 console.log(findDigit(-2825, 3));
