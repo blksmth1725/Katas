@@ -11,3 +11,5 @@ console.log(Check(true));
 console.log(Check(true));
 console.log(Check(false));
 console.log(Check(true));
+
+module.exports = Check;
