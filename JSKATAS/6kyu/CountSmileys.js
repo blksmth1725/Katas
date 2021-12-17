@@ -37,7 +37,17 @@ const smileSet3 = [
   ":}}",
 ];
 const smileSet4 = [":~D", ":(", ":-D"];
-const smileSet5 = [":(", ":~", ":(", ":-D", ":-D", ":-D", ":D", ":/", ":{"];
+const smileSet5 = [
+  ":(",
+  ":~",
+  ":(",
+  ":-D",
+  ":-D",
+  ":-D",
+  ":D",
+  ":/",
+  ":{",
+];
 
 const smileCheck = function (arr) {
   const validSmileys = [
@@ -54,7 +64,7 @@ const smileCheck = function (arr) {
     ";-D",
     ";~D",
   ];
-  return arr.filter((face) => validSmileys.includes(face)).length;
+  return arr.filter((face) => validSmileys.includes(face));
 };
 
 console.log(smileCheck(smileSet1));
