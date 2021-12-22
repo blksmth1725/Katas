@@ -42,3 +42,7 @@ export const companies = [
     end: 2010,
   },
 ];
+
+export const ages = [
+  10, 9, 15, 33, 30, 20, 16, 21, 44, 61, 13, 15, 45, 25, 64, 32,
+];

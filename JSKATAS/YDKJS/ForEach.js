@@ -1,4 +1,4 @@
-import { companies } from "./Companies";
+import { companies } from "./Data";
 
 const companiesArr = companies;
 
