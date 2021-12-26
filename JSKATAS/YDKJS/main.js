@@ -57,3 +57,25 @@ const sortedCompanies = companies.sort((a, b) =>
   a.start > b.start ? 1 : -1
 );
 console.log(sortedCompanies);
+
+const result = [
+  { subject: "Physics", marks: 41 },
+  { subject: "Chemistry", marks: 59 },
+  { subject: "Pure Maths", marks: 36 },
+  { subject: "Applied Maths", marks: 90 },
+  { subject: "English", marks: 64 },
+];
+
+let initialValue = {
+  pass: [],
+  fail: [],
+};
+
+const groupedResult = result.reduce((accumulator, current) => {
+  current.marks >= 50
+    ? accumulator.pass.push(current)
+    : accumulator.fail.push(current);
+  return accumulator;
+}, initialValue);
+
+console.log(groupedResult);
