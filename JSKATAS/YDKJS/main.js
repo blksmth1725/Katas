@@ -48,3 +48,12 @@ companies.forEach((element) => {
     ? console.log(`${element.name} is older than 20 years`)
     : console.log(`${element.name} company is a baby`);
 });
+
+companies.filter((company) => {
+  company.category === "Finance" ? console.log(company) : null;
+});
+
+const sortedCompanies = companies.sort((a, b) =>
+  a.start > b.start ? 1 : -1
+);
+console.log(sortedCompanies);
