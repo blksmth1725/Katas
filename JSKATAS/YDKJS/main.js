@@ -43,14 +43,8 @@ const companies = [
   },
 ];
 
-const listCompanies = (arr) => {
-  arr.forEach((element) => {
-    console.log(element);
-    return element.end - element.start >= 20
-      ? `${element.name} is older than 20 years`
-      : `${element.name} company is a baby`;
-  });
-};
-
-console.log(listCompanies(companies));
-console.log(companies);
+companies.forEach((element) => {
+  return element.end - element.start >= 20
+    ? console.log(`${element.name} is older than 20 years`)
+    : console.log(`${element.name} company is a baby`);
+});
