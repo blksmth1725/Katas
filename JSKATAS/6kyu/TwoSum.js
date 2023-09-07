@@ -13,10 +13,13 @@ const array3 = [11, 22, 33, 44, 55, 66, 77, 88, 99];
 const array4 = [15, 26, 37, 48, 59, 60, 71, 82, 93];
 
 const twoSum = (arr, target) => {
-	return {
-		arr: arr,
-		target: target,
-	};
+	for (i = 0; i < arr.length; i++) {
+		for (j = i + 1; j < arr.length; j++) {
+			if (arr[i] + arr[j] === target) {
+				return [i, j];
+			}
+		}
+	}
 };
 
 console.log(twoSum(array1, 13));
