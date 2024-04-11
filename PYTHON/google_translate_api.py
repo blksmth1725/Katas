@@ -1,6 +1,7 @@
 import requests
 import json
 import os
+from secrets import google_translate_sk
 
 
 url = "https://google-translator9.p.rapidapi.com/v2"
@@ -16,7 +17,7 @@ languages = {
 
 headers = {
     'content-type': 'application/json',
-    'X-RapidAPI-Key': '519948b3camshc33fce21fd478bap1c90efjsn78e9bce6da63',
+    'X-RapidAPI-Key': google_translate_sk,
     'X-RapidAPI-Host': 'google-translator9.p.rapidapi.com'
 }
 
