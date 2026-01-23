@@ -16,4 +16,4 @@ const longestSubString = (s) => {
 }
 
 
-console.log(longestSubString('aaaabbbbbbbbcccccccccccccc'))
+console.log(longestSubString('abcdedeacjaqlmonpypsdklmnop'))
