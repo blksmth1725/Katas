@@ -32,19 +32,18 @@
 //0 <= n <= 18
 
 
-const fctrl = (n) => {
-    let result = n
-    if(n === 0 || n === 1) return 1
-    while(n > 1) {
-        n--
-        result *= n
+const fctrl = (n) => (function* () {
+    let result = 1
+    if(n === 0 ) { 
+        yield 1; 
+        return;
     }
-    return result
-}
+    for(let i = 1; i<=n; i++) {
+        result *= i
+        yield result
+    }
+    
+})()
 
-
-console.log(fctrl(3))
-console.log(fctrl(10))
-console.log(fctrl(5))
-console.log(fctrl(6))
-console.log(fctrl(8))
+const gen = fctrl(3)
+console.log(gen.next.value)
