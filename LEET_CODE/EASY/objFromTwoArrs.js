@@ -26,10 +26,10 @@ vA3 = []
 
 
 const crteObj = (kA,vA) => {
-    const obj = {};
-    if(kA.length === 0 || vA.length === 0) {
-        return {}
-    } 
+  const obj = {};
+  if(kA.length === 0 || vA.length === 0) {
+      return {}
+  } 
 
   for (let i = 0; i < kA.length; i++) {
     const key = String(kA[i]);

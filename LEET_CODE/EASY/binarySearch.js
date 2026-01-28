@@ -20,11 +20,12 @@ const bs = (a, n) => {
     return -1
 }
 
+
 const bsus = (a,n) => {
     const sArr = a.sort((a,b) => a-b)
     let l = 0
     let r = a.length - 1
-
+    
     while(l <= r) {
         const mIdx = Math.floor((l+r)/2)
         const mNum = sArr[mIdx]
@@ -32,7 +33,7 @@ const bsus = (a,n) => {
             return {mIdx, mNum}
         } else if (mNum < n) {
             l = mIdx + 1
-        } else {
+        } else {ˆ
             r = mIdx - 1
         }
     }

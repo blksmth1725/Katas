@@ -13,7 +13,7 @@
 //Output: "2017-11-01"
 //Explanation: The day after 2017-10-31 is 2017-11-01.
 
-Date.prototype.nextDay = function(date) {
+Date.prototype.nextDay = function() {
     const next = new Date(this)
     next.setDate(this.getDate() + 1)
 
