@@ -10,7 +10,6 @@ const isAnagram = (s1,s2) => {
     }
     return true
 }
-
 const w1a = 'sidebar'
 const w1b = 'airbeds'
 const w2a = 'assert'
@@ -24,3 +23,5 @@ console.log(isAnagram(w2a,w2b))
 console.log(isAnagram(w3a,w3b))
 console.log(isAnagram(w3a,w1b))
 console.log(isAnagram(w3a,w3b))
+
+//npx create-react-app data-lab-fidget

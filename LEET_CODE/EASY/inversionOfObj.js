@@ -21,38 +21,38 @@
 //If asked in an interview:
 //“This is a hash-map based inversion problem. I iterate once through the input and build a reverse lookup map, grouping duplicate values into arrays.”
 
-
-const obj1 = [7,9,11,2,62,100,33,25,66,999,40,50,57,89,88,15,13,12,5,10]
+const obj1 = [
+  7, 9, 11, 2, 62, 100, 33, 25, 66, 999, 40, 50, 57, 89, 88, 15, 13, 12, 5, 10,
+];
 const obj2 = {
-    'apple': 'red',
-    'banana': 'yellow',
-    'grape': 'purple',
-    'onion': 'white',
-    'zucchini': 'green',
-    'blueberry': 'blue',
-    'carrot': 'orange'
-}
-const obj3 = {"a": "1", "b": "2", "c": "3", "d": "4"}
-const obj4 = {"a": "1", "b": "2", "c": "2", "d": "4"}
-const obj5 = ["1", "2", "3", "4"]
+  apple: "red",
+  banana: "yellow",
+  grape: "purple",
+  onion: "white",
+  zucchini: "green",
+  blueberry: "blue",
+  carrot: "orange",
+};
+const obj3 = { a: "1", b: "2", c: "3", d: "4" };
+const obj4 = { a: "1", b: "2", c: "2", d: "4" };
+const obj5 = ["1", "2", "3", "4"];
 
 const invertedObj = (obj) => {
-    const result = {}
-    for (const [key, value] of Object.entries(obj)) {
-        if(result[value] === undefined) {
-            result[value] = String(key)
-        } else if (Array.isArray(result[value])){
-            result[value].push(String(key))
-        } else {
-            result[value] = [result[value], String(key)]
-        }
+  const result = {};
+  for (const [key, value] of Object.entries(obj)) {
+    if (result[value] === undefined) {
+      result[value] = String(key);
+    } else if (Array.isArray(result[value])) {
+      result[value].push(String(key));
+    } else {
+      result[value] = [result[value], String(key)];
     }
-    return result
-}
+  }
+  return result;
+};
 
-
-console.log(invertedObj(obj1))
-console.log(invertedObj(obj2))
-console.log(invertedObj(obj3))
-console.log(invertedObj(obj4))
-console.log(invertedObj(obj5))
+console.log(invertedObj(obj1));
+console.log(invertedObj(obj2));
+console.log(invertedObj(obj3));
+console.log(invertedObj(obj4));
+console.log(invertedObj(obj5));
