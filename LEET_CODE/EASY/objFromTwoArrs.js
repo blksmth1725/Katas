@@ -36,13 +36,6 @@ const crteObj = (kA, vA) => {
     const key = String(kA[i]);
 
     if (!(key in obj)) {
-      if (vA[i] instanceof Date) {
-        const date = vA[i];
-        const year = date.getFullYear();
-        const month = String(date.getMonth() + 1).padStart(2, "0");
-        const day = String(date.getDate()).padStart(2, "0");
-        vA[i] = `${year}-${month}-${day}`;
-      }
       obj[key] = vA[i];
     }
   }
