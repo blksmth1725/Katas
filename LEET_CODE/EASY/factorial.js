@@ -5,7 +5,7 @@
 //Example 1:
 //Input: n = 5
 //Output: [1,2,6,24,120]
-//Explanation: 
+//Explanation:
 //const gen = factorial(5)
 //gen.next().value // 1
 //gen.next().value // 2
@@ -16,34 +16,46 @@
 //Example 2:
 //Input: n = 2
 //Output: [1,2]
-//Explanation: 
-//const gen = factorial(2) 
-//gen.next().value // 1 
-//gen.next().value // 2 
+//Explanation:
+//const gen = factorial(2)
+//gen.next().value // 1
+//gen.next().value // 2
 
 //Example 3:
 //Input: n = 0
 //Output: [1]
-//Explanation: 
-//const gen = factorial(0) 
-//gen.next().value // 1 
+//Explanation:
+//const gen = factorial(0)
+//gen.next().value // 1
 
 //Constraints:
 //0 <= n <= 18
 
-
-const fctrl = (n) => (function* () {
-    let result = 1
-    if(n === 0 ) { 
-        yield 1; 
-        return;
+const fctrl = (n) =>
+  (function* () {
+    let result = 1;
+    if (n === 0) {
+      yield 1;
+      return;
     }
-    for(let i = 1; i<=n; i++) {
-        result *= i
-        yield result
+    for (let i = 1; i <= n; i++) {
+      result *= i;
+      yield result;
     }
-    
-})()
+  })();
 
-const gen = fctrl(3)
-console.log(gen.next.value)
+const gen = fctrl(3);
+console.log(gen.next.value);
+
+const factorial = (num) => {
+  let result = 1;
+  if (num === 0) return 1;
+  for (let i = 1; i <= num; i++) {
+    result *= i;
+  }
+  return result;
+};
+
+console.log(factorial(5));
+console.log(factorial(6));
+console.log(factorial(7));

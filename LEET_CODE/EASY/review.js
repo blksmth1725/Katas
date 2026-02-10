@@ -25,7 +25,7 @@ const obj9 = {
 
 kA1 = ["a", "b", "c"];
 vA1 = [1, 2, 3];
-kA2 = ["1", 1, false];
+kA2 = ["1", 2, false];
 vA2 = [4, 5, 6];
 kA3 = [];
 vA3 = [];
@@ -52,9 +52,12 @@ const flss2 = "morning";
 const flss3 = "bbbbbbbbb";
 const flss4 = "letmmletmyyletmypeopl3g0goooo";
 const flss5 = "rrrrrmmmmmaslkdalskllllqwertyansillllslksdkkakkskkdfffkovsd";
+const flss6 = "I want to see if can reverse this";
+const flss7 = "siht esrever nac fi ees ot tnaw I";
 
 const str1 = "neehS";
 const str2 = "naitsirhC";
+const str3 = "christian";
 
 const n1 = 1234554321; // true
 const n2 = 98766789; // true
@@ -69,6 +72,64 @@ const n10 = 987654321; // false
 const n11 = 56654774; // false
 const n12 = 123456789; // false
 
+const r1 = "III";
+const r2 = "LVIII";
+const r3 = "MCMXCIV";
+const r4 = "LIIV";
+const r5 = "MMXCIV";
+
+const arrMergeObj = (ka, va) => {
+  let r = {};
+
+  for (let i = 0; i < ka.length; i++) {
+    const k = String(ka[i]);
+    if (!(k in r)) {
+      r[k] = va[i];
+    }
+  }
+  return r;
+};
+
+// console.log(romanNums(r1));
+// console.log(romanNums(r2));
+// console.log(romanNums(r3));
+// console.log(romanNums(r4));
+// console.log(romanNums(r5));
+
+// console.log(isPal(n1));
+// console.log(isPal(n2));
+// console.log(isPal(n3));
+// console.log(isPal(n4));
+// console.log(isPal(n5));
+// console.log(isPal(n6));
+// console.log(isPal(n7));
+// console.log(isPal(n8));
+// console.log(isPal(n9));
+// console.log(isPal(n10));
+// console.log(isPal(n11));
+// console.log(isPal(n12));
+
+// console.log(bnrysrch(arr1, 3));
+// console.log(bnrysrch(arr2, 90));
+// console.log(bnrysrch(arr3, 4));
+// console.log(bnrysrch(arr4, 14));
+// console.log(bnrysrch(obj1, 12));
+
+// console.log(twoSum(arr2, 185));
+// console.log(twoSum(arr1, 11));
+// console.log(twoSum(arr4, 30));
+// console.log(twoSum(arr3, 17));
+
+console.log(arrMergeObj(kA1, vA1));
+console.log(arrMergeObj(kA2, vA2));
+console.log(arrMergeObj(kA3, vA3));
+console.log(arrMergeObj(kA4, vA4));
+
+// console.log(arrMergeObj(kA1, vA1).inversionOfObj());
+// console.log(arrMergeObj(kA2, vA2).inversionOfObj());
+// console.log(arrMergeObj(kA3, vA3).inversionOfObj());
+// console.log(arrMergeObj(kA4, vA4).inversionOfObj());
+
 // console.log(reverseStr(bString1));
 // console.log(reverseStr(bString2));
 // console.log(reverseStr(bString3));
@@ -76,29 +137,11 @@ const n12 = 123456789; // false
 // console.log(reverseStr(bString5));
 // console.log(reverseStr(str1));
 // console.log(reverseStr(str2));
-// console.log(reverseStr(str3));
-// console.log(reverseStr(str4));
-// console.log(reverseStr(str5));
-
-// console.log(bnrysrch(arr1, 3));
-// console.log(bnrysrch(arr2, 90));
-// console.log(bnrysrch(arr3, 4));
-// console.log(bnrysrch(arr4, 14));
-
-// console.log(twoSum(arr2, 185));
-// console.log(twoSum(arr1, 11));
-// console.log(twoSum(arr4, 30));
-// console.log(twoSum(arr3, 17));
-
-// console.log(arrMergeObj(kA1, vA1));
-// console.log(arrMergeObj(kA2, vA2));
-// console.log(arrMergeObj(kA3, vA3));
-// console.log(arrMergeObj(kA4, vA4));
-
-// console.log(arrMergeObj(kA1, vA1).inversionOfObj());
-// console.log(arrMergeObj(kA2, vA2).inversionOfObj());
-// console.log(arrMergeObj(kA3, vA3).inversionOfObj());
-// console.log(arrMergeObj(kA4, vA4).inversionOfObj());
+// console.log(reverseStr(flss1));
+// console.log(reverseStr(flss2));
+// console.log(reverseStr(flss3));
+// console.log(reverseStr(flss6));
+// console.log(reverseStr(flss7));
 
 // console.log(obj1.inversionOfObj());
 // console.log(obj2.inversionOfObj());
@@ -140,22 +183,11 @@ const n12 = 123456789; // false
 // console.log(flss(flss3));
 // console.log(flss(flss4));
 // console.log(flss(flss5));
+// console.log(flss(str2));
+// console.log(flss(str3));
 
 // console.log(isValidBraces(bString1));
 // console.log(isValidBraces(bString2));
 // console.log(isValidBraces(bString3));
 // console.log(isValidBraces(bString4));
 // console.log(isValidBraces(bString5));
-
-console.log(isPal(n1));
-console.log(isPal(n2));
-console.log(isPal(n3));
-console.log(isPal(n4));
-console.log(isPal(n5));
-console.log(isPal(n6));
-console.log(isPal(n7));
-console.log(isPal(n8));
-console.log(isPal(n9));
-console.log(isPal(n10));
-console.log(isPal(n11));
-console.log(isPal(n12));

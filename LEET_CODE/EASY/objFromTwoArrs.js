@@ -24,7 +24,7 @@ vA2 = [4, 5, 6];
 kA3 = [];
 vA3 = [];
 kA4 = ["Name", "Age", "Date"];
-vA4 = ["Christian Sheen", 35, new Date()];
+vA4 = ["Christian Sheen", 35, "2026-02-08T15:03:55.357Z"];
 
 const crteObj = (kA, vA) => {
   const obj = {};
