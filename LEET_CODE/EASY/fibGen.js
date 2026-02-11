@@ -16,20 +16,20 @@ console.log(fibGen(15));
 // console.log(fibGen(60));
 // console.log(fibGen(100));
 
-const tenFib = fibGen(10);
+// const tenFib = fibGen(10);
 
-const fortyEigthFibNum = fibGen(48)[fibGen(48).length - 1];
-console.log(`the 48th be => ${fortyEigthFibNum}`);
+// const fortyEigthFibNum = fibGen(48)[fibGen(48).length - 1];
+// console.log(`the 48th be => ${fortyEigthFibNum}`);
 
-const turnToObj = (fibArr) => {
-  let fibObj = {};
-  for (let i = 0; i < fibArr.length; i++) {
-    const key = String(fibArr[i]);
-    if (!(key in fibObj)) {
-      fibObj[i] = key;
-    }
-  }
-  return fibObj;
-};
+// const turnToObj = (fibArr) => {
+//   let fibObj = {};
+//   for (let i = 0; i < fibArr.length; i++) {
+//     const key = String(fibArr[i]);
+//     if (!(key in fibObj)) {
+//       fibObj[i] = key;
+//     }
+//   }
+//   return fibObj;
+// };
 
-console.log(turnToObj(tenFib));
+// console.log(turnToObj(tenFib));
