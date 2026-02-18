@@ -3,8 +3,8 @@ const bulbs2 = [10, 30, 20, 10, 30, 40, 30, 40, 50, 50, 50, 10];
 const bulbs3 = [10, 20, 30, 40, 50, 40, 40, 30, 10];
 
 const toggleLightBulbs = (bulbs) => {
-  let res = [];
   if (bulbs.length === 0) return [];
+  let res = [];
   const nObj = bulbs.reduce((acc, val) => {
     acc[val] = (acc[val] ?? 0) + 1;
     return acc;
