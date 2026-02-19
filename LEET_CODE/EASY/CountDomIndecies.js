@@ -1,6 +1,6 @@
 const nums = [5, 4, 3];
 
-const domIdx = (a) => {
+const domIdx = (nums) => {
   const n = nums.length;
   if (n <= 1) return 0;
   let suffixSum = nums[n - 1];
