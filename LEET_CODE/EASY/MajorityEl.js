@@ -12,7 +12,7 @@ const majorityEl = (nums) => {
       return acc;
     },
     { counts: {}, maxKey: null, maxCount: 0 }
-  ).maxKey;
+  );
 };
 
 console.log(majorityEl(nums));
