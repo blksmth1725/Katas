@@ -1,4 +1,5 @@
 height = [1, 8, 6, 2, 5, 4, 8, 3, 7];
+
 const maxArea = function (arr) {
   let left = 0;
   let right = arr.length - 1;
@@ -6,10 +7,10 @@ const maxArea = function (arr) {
 
   while (left < right) {
     const width = right - left;
-    const water = width * Math.min(height[left], height[right]);
+    const water = width * Math.min(arr[left], arr[right]);
     max = Math.max(max, water);
 
-    if (height[left] <= height[right]) {
+    if (arr[left] <= arr[right]) {
       left++;
     } else {
       right--;
