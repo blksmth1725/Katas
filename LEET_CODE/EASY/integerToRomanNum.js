@@ -1,5 +1,5 @@
 const itr = (num) => {
-  const vals = [
+  const values = [
     [1000, "M"],
     [900, "CM"],
     [500, "D"],
