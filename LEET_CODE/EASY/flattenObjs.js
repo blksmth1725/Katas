@@ -21,18 +21,18 @@ const obj = {
   active: true,
 };
 
-// const flattenObject = (obj, pKey = "", res = {}) => {
-//   for (const [key, value] of Object.entries(obj)) {
-//     const newKey = pKey ? `${pKey}.${key}` : key;
+const flattenObject = (obj, pKey = "", res = {}) => {
+  for (const [key, value] of Object.entries(obj)) {
+    const newKey = pKey ? `${pKey}.${key}` : key;
 
-//     if (typeof value === "object" && value !== null && !Array.isArray(value)) {
-//       flattenObject(value, newKey, res);
-//     } else {
-//       res[newKey] = value;
-//     }
-//   }
-//   return res;
-// };
+    if (typeof value === "object" && value !== null && !Array.isArray(value)) {
+      flattenObject(value, newKey, res);
+    } else {
+      res[newKey] = value;
+    }
+  }
+  return res;
+};
 
 // const newObj = flattenObject(obj);
 
@@ -53,8 +53,8 @@ const doSomethingElse = (obj) => {
   return `${name} ${lastName} is a ${gender} of age ${age} born in ${dateCreated}`;
 };
 
-// console.log(flattenObject(obj));
+console.log(flattenObject(obj));
 // console.log(doSomething(newObj));
-console.log(doSomethingElse(obj));
+//console.log(doSomethingElse(obj));
 
 // https://restcountries.com/v3.1/name/{name}

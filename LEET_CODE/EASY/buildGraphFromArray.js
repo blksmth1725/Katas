@@ -9,7 +9,7 @@ class TreeNode {
 const root1 = [1, 2, 2, 3, 4, 4, 3];
 
 const buildGraph = (arr) => {
-  if (!arr.length && arr[0] !== null) return null;
+  if (!arr.length || arr[0] === null) return null;
 
   const root = new TreeNode(arr[0]);
   const queue = [root];
@@ -34,6 +34,7 @@ const buildGraph = (arr) => {
       i++;
     }
   }
+
   return root;
 };
 
